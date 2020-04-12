@@ -1,9 +1,9 @@
 import os,re,requests,wget,sys
 
 """
-		--------------------------- HamzaOPLEX --------------------------------------
-	> python pydownloadfb.py -u URL # He will save the video in the default windows download folder
-	> python pydownloadfb.py -u URL -p PATH #Choose your path (Recommended)
+		------------------------Usage--------------------------------------
+	> python downVfb.py -u URL # He will save the video in the default windows download folder
+	> python downVfb.py -u URL -p PATH #Choose your path (Recommended)
 
 """
 class Fbdownloader() :
@@ -60,8 +60,20 @@ if len(sys.argv) > 1 :
 			print("Error")
 	except Exception as Err : 
 		print("Please Use -u URL -p PATH")
+else :
+	print("Please Use -u URL -p PATH")
+
 try :
 	downloader = Fbdownloader(url,path)
 	downloader.downloader()
 except NameError :
 	pass
+
+
+
+
+
+
+
+
+
